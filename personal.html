@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kayode Olumoyin Personal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#2c5282;
+    --text:#1a202c;
+    --muted:#4a5568;
+    --bg:#f7fafc;
+    --card:#ffffff;
+    --border:#e2e8f0;
+}
+
+/* GLOBAL */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* NAVIGATION (academic clean bar) */
+
+.info2{
+    width:100%;
+    padding:18px 20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid var(--border);
+}
+
+.info2 a{
+    text-decoration:none;
+    color:var(--muted);
+    margin:0 12px;
+    font-size:15px;
+    font-weight:500;
+}
+
+.info2 a:hover{
+    color:var(--primary);
+}
+
+.spaced{
+    color:#cbd5e0;
+}
+
+/* MAIN PAGE WRAPPER */
+
+#vh{
+    max-width:1150px;
+    margin:40px auto;
+    padding:50px 40px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+}
+
+/* PAGE TITLE */
+
+h1{
+    text-align:center;
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:40px;
+    letter-spacing:-1px;
+    font-family:Georgia, serif;
+}
+
+/* GALLERY GRID */
+
+.row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:22px;
+    margin-bottom:28px;
+}
+
+/* CARD STYLE */
+
+.column{
+    background:#ffffff;
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+
+    box-shadow:0 4px 14px rgba(0,0,0,0.04);
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.column:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 24px rgba(0,0,0,0.08);
+}
+
+/* CAPTION */
+
+.column h4{
+    margin:0;
+    padding:14px 16px 8px 16px;
+    font-size:0.95rem;
+    font-weight:500;
+    color:var(--muted);
+    line-height:1.5;
+}
+
+/* IMAGE */
+
+.column img{
+    width:100%;
+    display:block;
+    height:auto;
+    object-fit:cover;
+}
+
+/* subtle zoom on hover */
+.column:hover img{
+    transform:scale(1.02);
+    transition:transform 0.4s ease;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+    #vh{
+        margin:20px;
+        padding:30px 20px;
+    }
+
+    h1{
+        font-size:2.3rem;
+    }
+}
+
+@media (max-width:600px){
+
+    .info2 a{
+        display:inline-block;
+        margin:6px 8px;
+        font-size:14px;
+    }
+
+    .spaced{
+        display:none;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .column h4{
+        font-size:0.9rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="info2">
+    <a href="index.html">Home</a>
+    <span class="spaced">&bull;</span>
+
+    <a href="research.html">Research</a>
+    <span class="spaced">&bull;</span>
+
+    <a href="teaching.html">Teaching</a>
+    <span class="spaced">&bull;</span>
+
+    <a href="notes.html">Notes</a>
+    <span class="spaced">&bull;</span>
+
+    <a href="useful_links.html">Useful Links</a>
+    <span class="spaced">&bull;</span>
+
+    <a href="personal.html">Personal</a>
+</nav>
+
+<!-- MAIN -->
+<main id="vh">
+
+  <h1>Personal</h1>
+
+  <!-- ROW 1 -->
+  <div class="row">
+
+    <div class="column">
+      <img src="okayode9.JPG" alt="Snow">
+    </div>
+
+    <div class="column">
+      <h4>Meeting Dr. Bonita Lawrence, 2011</h4>
+      <img src="okayode10.JPG" alt="Forest">
+    </div>
+
+    <div class="column">
+      <h4>Bridge Day, West Virginia, 2012</h4>
+      <img src="okayode3.jpg" alt="Mountains">
+    </div>
+
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="row">
+
+    <div class="column">
+      <h4>Playing Trivia, Huntington WV, 2013</h4>
+      <img src="okayode6.jpg" alt="Snow">
+    </div>
+
+    <div class="column">
+      <h4>Bukola at Universal Studios, 2016</h4>
+      <img src="okayode4.jpg" alt="Forest">
+    </div>
+
+    <div class="column">
+      <h4>Solis House (Desperate Housewives) Universal Studios, 2017</h4>
+      <img src="Carlos_Gabrielle_Solis.jpg" alt="Mountains">
+    </div>
+
+  </div>
+
+  <!-- ROW 3 -->
+  <div class="row">
+
+    <div class="column">
+      <h4>Dr. Abdul Khaliq (middle), Dr. R. Garrappa (3rd Right), 2018</h4>
+      <img src="okayode2.jpg" alt="Snow">
+    </div>
+
+    <div class="column">
+      <h4>Hooded by Dr. Abdul Khaliq, 2022</h4>
+      <img src="graduation_01.jpg" alt="Forest">
+    </div>
+
+    <div class="column">
+      <h4>With President Sidney McPhee, 2022</h4>
+      <img src="graduation_02.jpg" alt="Mountains">
+    </div>
+
+  </div>
+
+  <!-- ROW 4 -->
+  <div class="row">
+
+    <div class="column">
+      <h4>Rejniak Lab, Winter 2022</h4>
+      <img src="2022_Rejniak_labmeeting.jpg" alt="Snow">
+    </div>
+
+    <div class="column">
+      <h4>Moffitt Symposium, 2023</h4>
+      <img src="2023_MoffittSymposium_Kayode2.jpg" alt="Forest">
+    </div>
+
+    <div class="column">
+      <h4>Participating in Miles for Moffitt, 2023</h4>
+      <img src="olumoyin_milesMoffitt2.jpeg" alt="Mountains">
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

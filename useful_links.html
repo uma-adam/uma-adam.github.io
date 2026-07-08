@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kayode Olumoyin - Useful Links</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#f7fafc;
+    --card:#ffffff;
+    --text:#1a202c;
+    --muted:#4a5568;
+    --primary:#2c5282;
+    --border:#e2e8f0;
+}
+
+/* Global */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.75;
+}
+
+/* Navigation */
+
+.info2{
+    width:100%;
+    padding:18px 20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid var(--border);
+}
+
+.info2 a{
+    text-decoration:none;
+    color:var(--muted);
+    margin:0 12px;
+    font-size:15px;
+    font-weight:500;
+}
+
+.info2 a:hover{
+    color:var(--primary);
+}
+
+.spaced{
+    color:#cbd5e0;
+}
+
+/* Main Container */
+
+#vh{
+    max-width:1100px;
+    margin:40px auto;
+    padding:50px 40px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+}
+
+/* Page Title */
+
+h1{
+    text-align:center;
+    font-size:3rem;
+    font-weight:700;
+    margin-top:0;
+    margin-bottom:50px;
+    letter-spacing:-1px;
+    font-family:Georgia, serif;
+}
+
+/* LINKS GRID */
+
+.links{
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+}
+
+/* CARD STYLE (Academic tiles) */
+
+.links li{
+    background:#ffffff;
+    border:1px solid var(--border);
+    border-radius:12px;
+
+    transition:all 0.25s ease;
+    box-shadow:0 2px 10px rgba(0,0,0,0.04);
+}
+
+.links li:hover{
+    transform:translateY(-4px);
+    border-color:rgba(44,82,130,0.3);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LINK TEXT */
+
+.links li a{
+    display:block;
+    padding:22px;
+    text-decoration:none;
+
+    color:var(--text);
+    font-size:1.05rem;
+    font-weight:500;
+}
+
+.links li a:hover{
+    color:var(--primary);
+}
+
+/* GENERAL LINKS */
+
+a{
+    color:var(--primary);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+    #vh{
+        margin:20px;
+        padding:30px 20px;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+}
+
+@media (max-width:600px){
+
+    .info2{
+        padding:18px 12px;
+    }
+
+    .info2 a{
+        display:inline-block;
+        margin:6px 8px;
+        font-size:14px;
+    }
+
+    .spaced{
+        display:none;
+    }
+
+    h1{
+        font-size:2rem;
+        margin-bottom:30px;
+    }
+
+    .links{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="info2">
+  <a href="index.html">Home</a>
+  <span class="spaced">&bull;</span>
+
+  <a href="research.html">Research</a>
+  <span class="spaced">&bull;</span>
+
+  <a href="teaching.html">Teaching</a>
+  <span class="spaced">&bull;</span>
+
+  <a href="notes.html">Notes</a>
+  <span class="spaced">&bull;</span>
+
+  <a href="useful_links.html">Useful Links</a>
+  <span class="spaced">&bull;</span>
+
+  <a href="personal.html">Personal</a>
+</nav>
+
+<!-- MAIN -->
+<main id="vh">
+
+  <h1>Useful Links</h1>
+
+  <ul class="links">
+
+    <li>
+      <a href="https://icerm.brown.edu/" target="_blank">
+        ICERM
+      </a>
+    </li>
+
+    <li>
+      <a href="https://terrytao.wordpress.com/" target="_blank">
+        Prof. Terence Tao's Blog
+      </a>
+    </li>  
+
+    <li>
+      <a href="https://www.eigensteve.com/" target="_blank">
+        Prof. Steve Brunton's page
+      </a>
+    </li>
+
+    <li>
+      <a href="https://deepmind.google/research/publications/" target="_blank">
+        Google DeepMind Publications
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.siam.org/" target="_blank">
+        Society for Industrial and Applied Mathematics (SIAM)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.smb.org/" target="_blank">
+        Society for Mathematical Biology (SMB)
+      </a>
+    </li>  
+
+    <li>
+      <a href="https://mathematical-oncology.org/" target="_blank">
+        Mathematical Oncology
+      </a>
+    </li>    
+
+    <li>
+      <a href="https://math.mit.edu/~gs/" target="_blank">
+        Prof. Gilbert Strang
+      </a>
+    </li>
+
+    <li>
+      <a href="https://web.stanford.edu/class/cme324/classics/" target="_blank">
+        Prof. Trefethen's List of Classical Papers
+      </a>
+    </li>
+
+    <li>
+      <a href="https://physicssongs.org/lehrer/delta.html" target="_blank">
+        There is a Delta for Every Epsilon
+      </a>
+    </li>
+
+  </ul>
+
+</main>
+
+</body>
+</html>
