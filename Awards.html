@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Umar Adam - Awards</title>
+<title>Umar Adam - Research</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +45,7 @@ body{
     position:sticky;
     top:0;
     z-index:1000;
-
-    background:rgba(255,255,255,0.9);
+    background:rgba(255,255,255,0.92);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--border);
 }
@@ -78,55 +76,60 @@ body{
 }
 
 h1{
-    text-align:center;
     font-size:3rem;
-    font-weight:600;
-    letter-spacing:-1px;
-    margin:0 0 40px 0;
+    font-weight:700;
+    text-align:center;
+    margin-bottom:40px;
     font-family:Georgia, serif;
+    letter-spacing:-1px;
 }
 
-.notes-list{
+h2{
+    font-size:1.3rem;
+    font-weight:600;
+    margin-top:60px;
+    margin-bottom:25px;
+    color:var(--text);
+    border-left:4px solid var(--primary);
+    padding-left:14px;
+}
+
+.paper-list{
     list-style:none;
     padding:0;
     margin:0;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-    gap:22px;
 }
 
-.notes-list li{
-    background:#ffffff;
+.paper-list li{
+    padding:22px 24px;
+    margin-bottom:18px;
     border:1px solid var(--border);
-    border-radius:10px;
-    transition:all 0.2s ease;
-    box-shadow:0 2px 10px rgba(0,0,0,0.03);
+    border-radius:12px;
+    background:#ffffff;
+    transition:all 0.25s ease;
 }
 
-.notes-list li:hover{
+.paper-list li:hover{
     transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
     border-color:#cbd5e0;
-    box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
 
-.notes-list li a{
-    display:block;
-    padding:22px;
-    text-decoration:none;
-    color:var(--text);
-}
-
-.notes-list li a:hover{
-    color:var(--primary);
-}
-
-.notes-list li i{
-    font-style:normal;
-    font-size:1rem;
+.paper-list li > a:first-child{
+    font-size:1.02rem;
     font-weight:500;
-    line-height:1.6;
-    display:block;
+    color:var(--primary);
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+.paper-list li a:last-child{
+    font-size:0.95rem;
+    color:#2b6cb0;
+}
+
+i{
+    color:var(--text);
 }
 
 a{
@@ -141,8 +144,8 @@ a:hover{
 @media (max-width:900px){
 
     #vh{
-        margin:20px;
-        padding:30px 20px;
+        margin:25px 15px;
+        padding:35px 25px;
     }
 
     h1{
@@ -151,10 +154,6 @@ a:hover{
 }
 
 @media (max-width:600px){
-
-    .info2{
-        padding:15px 10px;
-    }
 
     .info2 a{
         display:inline-block;
@@ -166,20 +165,15 @@ a:hover{
         display:none;
     }
 
-    #vh{
-        padding:25px 18px;
-    }
-
     h1{
         font-size:2rem;
     }
 
-    .notes-list{
-        grid-template-columns:1fr;
-        gap:16px;
+    h2{
+        font-size:1.1rem;
     }
 
-    .notes-list li a{
+    .paper-list li{
         padding:18px;
     }
 }
@@ -207,14 +201,24 @@ a:hover{
   <span class="spaced">&bull;</span>
 
   <a href="personal.html">Personal</a>
-    <span class="spaced">&bull;</span>
-    
-    <a href="Awards.html">Awards</a>
-  <span class="spaced">&bull;</span>
+<span class="spaced">&bull;</span>
+
+<a href="Awards.html">Honors and Awards</a>
+<span class="spaced">&bull;</span>
 </nav>
 
 <!-- MAIN -->
 <main id="vh">
-<h1>
 
-<\main>
+  <!-- <h1>Research Papers</h1> -->
+<li>July 2026: Awarded a SIAM Student Travel Award to present our research at 
+    the <a href="https://www.siam.org/conferences-events/siam-conferences/an26/">SIAM Annual Meeting (AN26)</a>
+ </li>
+
+ <li>2026-2027: Awarded the TTU Hutcheson Graduate Endowed Arts and Sciences Scholarship for the 2026-2027 academic session ($2,000.00).</li>   
+
+
+</main>
+
+</body>
+</html>
